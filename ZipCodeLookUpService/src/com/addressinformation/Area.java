@@ -17,7 +17,7 @@ public class Area extends State {
 	}
 	@Override
 	public String toString() {
-		return "Area [areaName=" + areaName + ", zipCode=" + zipCode + ", state=" + state + ", countryName=" + countryName + "]";
+		return  "areaName=" + areaName + ", zipCode=" + zipCode + ", state=" + state + ", countryName=" + countryName;
 	}
 	public Area(String countryName, String state,String areaName, long zipCode) {
 		super.countryName = countryName;
