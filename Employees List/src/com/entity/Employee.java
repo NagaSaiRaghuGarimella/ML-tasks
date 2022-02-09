@@ -40,8 +40,8 @@ public class Employee {
 
 	@Override
 	public String toString() {
-		return "Employee [employeeName=" + employeeName + ", employeeSalary=" + employeeSalary + ", employeeLocation="
-				+ employeeLocation + "]";
+		return "employeeName=" + employeeName + ", employeeSalary=" + employeeSalary + ", employeeLocation="
+				+ employeeLocation;
 	}
 	
 	
