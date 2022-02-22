@@ -46,7 +46,7 @@ public class EmployeeList {
     
     //Employee with location Hyderabad.
     System.out.println(" Employees with location Hyderabad ");
-	List<Employee> result = employeeList.parallelStream().filter(loc->loc.getEmployeeLocation().equalsIgnoreCase("Hyderabad")).collect(Collectors.toList());
+	List<Employee> result = employeeList.parallelStream().filter(loc->"Hyderabad".equalsIgnoreCase(loc.getEmployeeLocation())).collect(Collectors.toList());
 	System.out.println(result);
     
 	//Employees whose salary greater than 100000.
