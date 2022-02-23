@@ -18,7 +18,7 @@
 		<hibernate.version>5.2.10.Final</hibernate.version>
 		<spring.version>5.0.3.RELEASE</spring.version>
 	</properties>
-
+<!--hello-->
 	<dependencies>
 		<dependency>
 			<groupId>junit</groupId>
@@ -26,6 +26,7 @@
 			<version>4.12</version>
 			<scope>test</scope>
 		</dependency>
+		
 		<dependency>
 			<groupId>javax.servlet</groupId>
 			<artifactId>javax.servlet-api</artifactId>
