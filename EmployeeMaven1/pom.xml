@@ -18,7 +18,6 @@
 		<hibernate.version>5.2.10.Final</hibernate.version>
 		<spring.version>5.0.3.RELEASE</spring.version>
 	</properties>
-<!--hello-->
 	<dependencies>
 		<dependency>
 			<groupId>junit</groupId>
@@ -91,8 +90,6 @@
 			<artifactId>spring-data-jpa</artifactId>
 			<version>2.0.5.RELEASE</version>
 		</dependency>
-
-
 
 
 	</dependencies>
