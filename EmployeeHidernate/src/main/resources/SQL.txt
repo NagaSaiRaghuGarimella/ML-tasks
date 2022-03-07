@@ -1,0 +1,22 @@
+USE Employeedb;
+
+create table department (
+       dept_id int not null,
+        dept_name varchar(255),
+        primary key (dept_id)
+    );
+    
+    create table Employees (
+       emp_id int not null,
+        emp_joining_date varchar(255),
+        emp_name varchar(255),
+        emp_salary numeric(19,0),
+        emp_status varchar(255),
+        dept_id int,
+        primary key (emp_id)
+    );
+    
+     alter table Employees 
+       add constraint FKok2pnb6aoht66xh4rqq0wt5r5 
+       foreign key (dept_id) 
+       references department
