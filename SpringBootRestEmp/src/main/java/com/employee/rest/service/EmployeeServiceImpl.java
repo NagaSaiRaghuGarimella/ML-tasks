@@ -1,6 +1,7 @@
 package com.employee.rest.service;
 
 import java.io.IOException;
+
 import java.util.List;
 import java.util.Optional;
 
@@ -35,12 +36,12 @@ public class EmployeeServiceImpl implements EmployeeService {
 	@Override
 	public Employee getEmployeeById(Integer emp_id) {
 		return repository.findById(emp_id)
-				.orElseThrow(() -> new InvalidIdException(" Employee not exsits with id " + emp_id));
+				.orElseThrow(() -> new InvalidIdException(" Employee not exsits with id " +emp_id));
 	}
 
 	@Override
 	public Employee updateEmployee(Integer emp_id, Employee employee) {
-		repository.findById(emp_id).orElseThrow(() -> new InvalidIdException(" Employee not exsits with id " + emp_id));
+		repository.findById(emp_id).orElseThrow(() -> new InvalidIdException(" Employee not exsits with id " +emp_id));
 		return repository.save(employee);
 
 	}
@@ -48,7 +49,7 @@ public class EmployeeServiceImpl implements EmployeeService {
 	@Override
 	public void deleteEmployeeById(Integer emp_id) {
 
-		repository.findById(emp_id).orElseThrow(() -> new InvalidIdException(" Employee not exsits with id " + emp_id));
+		repository.findById(emp_id).orElseThrow(() -> new InvalidIdException(" Employee not exsits with id " +emp_id));
 		repository.deleteById(emp_id);
 
 	}
